@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///E:/Desktop/Bootstrap/grid%20layout/responsiveProject.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./responsive_files/bootstrap.css">
+    <style>
+      @media (max-width: 678px) {
+        #head {
+          text-align: center;
+        }
+        #para {
+          text-align: justify;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="remove">
+      <div class="row">
+        <div class="col-md-3" style="border: 2px solid red;">
+          <img src="./responsive_files/w.jpg" alt="wallpaper" width="100%">
+        </div>
+        <div class="col-md-9" style="border: 2px solid green;">
+          <h1 id="head">This is my first project !</h1>
+          <p id="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+            aliquam consequuntur eveniet earum atque alias neque vel, assumenda
+            amet tenetur ad magni cupiditate enim suscipit ullam quo
+            voluptatibus, cumque vero! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Enim, sit amet atque neque esse hic eum ad!
+            Mollitia omnis doloribus unde. Iure eaque quisquam soluta dolorem
+            ipsum, iusto enim aut.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onresize = function() {
+        if (screen.width < 768) {
+          var remove = document.getElementById("remove");
+          remove.className = "container - fluid";
+        } else {
+          var remove = document.getElementById("remove");
+          remove.className = "container";
+        }
+      };
+    </script>
+  
+
+</body></html>
